@@ -1,0 +1,129 @@
+body {
+  background-color:#e8a87c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Inter', sans-serif;
+}
+
+
+#container{
+ 
+  .btn{
+    transition: all .3s ease-in-out;
+    &:nth-child(2){
+      @include createButton(150px, 60px, 50px,#E2B0FF,#9F44D3, rgba(171,88,219,0.5));
+    }
+    &:nth-child(3){
+      @include createButton(150px, 60px, 50px,#81FBB8,#28C76F, rgba(60,211,128,0.5));
+    }
+    &:nth-child(4){
+      @include createButton(150px, 60px, 50px,#ABDCFF,#0396FF, rgba(30,161,255,0.5));
+    }
+    &:nth-child(5){
+      @include createButton(150px, 60px, 50px,#FEB692,#EA5455, rgba(238,103,97,0.5));
+    }
+    &:hover{
+      transform:translatey(10px);
+      box-shadow:6px 1px 10px rgb(40, 33, 33) ;
+    }
+    .btn:active{
+      opacity: 0.5;
+    }
+  }
+
+}
+#container {
+  color: #d7dfe4;
+}
+.digit {
+  font-size: 150px;
+  font-weight: bold;
+  text-shadow:10px 4px 10px rgb(62, 45, 45) ;
+}
+
+.txt{
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow:3px 4px 8px black ;
+
+}
+#btn-container{
+    text-align: center;
+    margin-top: 40px;
+}
+.btn{
+    padding: 7px 25px ;
+    margin:  0px 15px;
+    font-size: 15px;
+    border: 0px;
+    cursor: pointer;
+    color: white;
+    border-radius: 20px;
+    box-shadow: 6px 4px 10px black;
+    text-transform: uppercase;
+
+  }
+#start{
+    background-color: #1abc9c;
+} 
+#stop{
+   background-color: #3498db;     
+}
+#reset{
+    background-color: #e74c3c;
+}
+        
+
+@media(min-width:280px){
+  
+.txt{
+  font-size: 20px;
+  font-weight: bold;
+  text-shadow:3px 4px 8px black ;
+
+}
+.digit {
+  font-size: 50px;
+  font-weight: bold;
+  text-shadow:10px 4px 10px rgb(62, 45, 45) ;
+}
+.btn{
+  padding: 7px 25px ;
+  margin:  0px 15px;
+  font-size: 10px;
+  border: 0px;
+  cursor: pointer;
+  color: white;
+  border-radius: 20px;
+  box-shadow: 6px 4px 10px black;
+  text-transform: uppercase;
+
+}
+}
+@media(min-width:768px){
+  .txt{
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow:3px 4px 8px black ;
+  
+  }
+  .digit {
+    font-size: 120px;
+    font-weight: bold;
+    text-shadow:10px 4px 10px rgb(62, 45, 45) ;
+  }
+  .btn{
+    padding: 7px 35px ;
+    margin:  0px 15px;
+    font-size: 10px;
+    border: 0px;
+    cursor: pointer;
+    color: white;
+    border-radius: 20px;
+    box-shadow: 6px 4px 10px black;
+    text-transform: uppercase;
+  
+}
+}
